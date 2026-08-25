@@ -1,0 +1,44 @@
+@use "../../style.scss" as *;
+
+.users-container{
+    .main-row{
+        display: flex;
+        justify-content: center;
+
+        .main-col{
+            display: flex;
+            justify-content: center;
+
+            .main-table{
+                border: 1px solid black;
+                width: 75%;
+                margin-top: 6vh;
+                text-align: center;
+
+                th{
+                    background-color: $main;
+                    color: $w;
+                    border: 1px solid black;
+                }
+            
+                .table-body{      
+                    tr, td{
+                        border: 1px solid black;
+                    }       
+                       
+                    .actions-cell{
+                        border: none;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+
+                        .view-icon{
+                            cursor: pointer;
+                            color: $main;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

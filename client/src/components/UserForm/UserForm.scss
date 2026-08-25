@@ -1,0 +1,73 @@
+@use "../../style.scss" as *;
+
+.form-container {
+    display: flex;
+    justify-content: center;
+
+    .main-form{
+        border: 2px solid $main;
+        margin: 4vh;
+        padding-bottom: 2vh;
+
+        h5{
+            background-color: $main;
+            padding: 15px;
+            color: $w;
+            text-align: center; 
+        }
+
+        .form-table{
+            tr{
+                td{
+                    padding: 10px;
+
+                    .pwd-cell{
+                        .show-pass{
+                            padding: 3px;
+                            border-radius: 4px;
+                            background-color: $main;
+                            color: $w;
+                        }
+                    }
+
+                    input[type="text"],
+                    input[type="email"],
+                    input[type="password"],
+                    input[type="number"],
+                    input[type="date"],
+                    textarea,
+                    select {
+                        width: 85%;
+                        padding: 5px;
+                        margin-left: 10px;
+                        border-radius: 5px;
+                        border: 1px solid grey;
+                    }
+
+                    input[type="radio"] {
+                        margin-left: 10px;
+                    }
+
+                    input[type="checkbox"] {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .submit-btn{
+            text-align: center;
+
+            button{
+                border: none;
+                background-color: $main;
+                margin-top: 3vh;
+                padding: 10px;
+                color: white;
+                cursor: pointer;
+                font-weight: 500;
+                border-radius: 5px;
+            }
+        }
+    }
+}

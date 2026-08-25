@@ -1,0 +1,23 @@
+@use "../../style.scss" as *;
+
+.navbar{
+    background-color: $main;
+    width: 100%;
+    a{
+        text-decoration: none;
+        color: $w;
+        font-weight: 500;
+    }:hover{
+        color: $w;
+    }
+    .nav-list{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 0;
+        width: 100%;
+        li{
+            padding: 10px;
+            font-size: 17px;
+        }
+    }
+}
